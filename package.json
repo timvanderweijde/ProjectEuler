@@ -4,11 +4,12 @@
   "description": "\"# ProjectEuler\"",
   "main": "index.js",
   "scripts": {
-    "test": "npx tsc && concurrently \"node .\\dist\\problems\\problem1.js\" \"node .\\dist\\problems\\problem2.js\""
+    "test": "npx tsc && concurrently \"node .\\dist\\problems\\problem3.js\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "concurrently": "^8.2.2",
     "typescript": "^5.4.5"
   }
