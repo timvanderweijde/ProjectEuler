@@ -6,7 +6,7 @@ const writeFileAsync = promisify(writeFile);
 // Function to save the number array to a file, each number on a new line
 export async function saveArrayToFile(arr: number[], filePath: string): Promise<void> {
   try {
-    const data = arr.join('\n');
+    const data = arr.join(',');
     await writeFileAsync(filePath, data, 'utf8');
     console.log('File saved successfully.');
   } catch (error) {
